@@ -26,3 +26,62 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
 sections.forEach((section) => observer.observe(section));
+
+const quoteCarousel = document.querySelector('.quote-carousel');
+if (quoteCarousel) {
+  const quoteTrack = quoteCarousel.querySelector('.quote-track');
+  const slides = [...quoteCarousel.querySelectorAll('.quote-slide')];
+  const prevButton = quoteCarousel.querySelector('.carousel-control.prev');
+  const nextButton = quoteCarousel.querySelector('.carousel-control.next');
+  const dotsContainer = quoteCarousel.querySelector('.carousel-dots');
+  let currentIndex = 0;
+  let autoplayTimer = null;
+
+  const updateSlide = (index) => {
+    currentIndex = (index + slides.length) % slides.length;
+    quoteTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
+    dotsContainer.querySelectorAll('.carousel-dot').forEach((dot, dotIndex) => {
+      dot.classList.toggle('is-active', dotIndex === currentIndex);
+    });
+  };
+
+  const startAutoplay = () => {
+    stopAutoplay();
+    autoplayTimer = window.setInterval(() => updateSlide(currentIndex + 1), 5000);
+  };
+
+  const stopAutoplay = () => {
+    if (autoplayTimer !== null) {
+      window.clearInterval(autoplayTimer);
+      autoplayTimer = null;
+    }
+  };
+
+  slides.forEach((_, index) => {
+    const dot = document.createElement('button');
+    dot.type = 'button';
+    dot.className = 'carousel-dot';
+    dot.setAttribute('aria-label', `Show quote ${index + 1}`);
+    dot.addEventListener('click', () => {
+      updateSlide(index);
+      startAutoplay();
+    });
+    dotsContainer.appendChild(dot);
+  });
+
+  prevButton.addEventListener('click', () => {
+    updateSlide(currentIndex - 1);
+    startAutoplay();
+  });
+
+  nextButton.addEventListener('click', () => {
+    updateSlide(currentIndex + 1);
+    startAutoplay();
+  });
+
+  quoteCarousel.addEventListener('mouseenter', stopAutoplay);
+  quoteCarousel.addEventListener('mouseleave', startAutoplay);
+
+  updateSlide(0);
+  startAutoplay();
+}
