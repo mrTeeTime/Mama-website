@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  position: fixed;
+  top: 0rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(60, 60, 60, 0);
+  padding: 1rem 3rem;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+header button {
+	background: rgba(44, 44, 44, 0.30);
+	color: #fff;
+	border: 0px solid rgba(255, 255, 255, 0.548);
+	border-radius: 10px;
+	padding: 0.5rem 1.2rem;
+	margin: 0 0.3rem;
+	font-size: 1rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background 1s linear, transform 1s, color 1s;
+}
+
+header button:hover,
+header button:focus {
+	background: rgba(255, 255, 255, 0.616);
+	transform: translateY(-2px) scale(1.05);
+	outline: none;
+	color: #00054dc5;
+}
+
+header a {
+  color: white;
+  margin: 0 0.5rem;
+  font-weight: bold;
+}
+
+.menu-right {
+  display: flex;
+}
+
+@keyframes moveBg {
+  0% {
+    background-position: center -325px;
+	background-size: 100%;
+  }
+  50% {
+    background-position: center -275px;
+	background-size: 120%;
+  }
+  100% {
+    background-position: center -325px;
+	background-size: 100%;
+  }
+}
+
+
+.hero {
+  /*margin-top: 80px;*/
+  background: url('./img/hero.png') no-repeat center -300px/cover;
+  text-align: center;
+  padding: 4rem;
+  color: white;
+  animation: moveBg 40s linear infinite;
+  min-height: 40vh;
+  height: 40vh;         /* Fixed height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+}
+
+.hero h1,
+.hero h2,
+.hero h3 {
+  text-shadow: 2px 2px 25px rgba(0,0,0,0.5), -2px -2px 25px rgba(0,0,0,0.5);
+}
+
+.bubbles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.bubble {
+  background: #f4f4f4;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.bubble:hover {
+  background: #ddd;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}

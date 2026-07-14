@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="icon-breath" viewBox="0 0 64 64">
+    <path d="M8 23h30c9 0 9-14 0-14-4 0-7 2-9 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <path d="M8 34h42c8 0 8 12 0 12-4 0-7-2-9-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <path d="M8 45h22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="icon-parts" viewBox="0 0 64 64">
+    <path d="M22 50c-3-8-10-12-10-24 0-12 10-20 22-20s20 8 20 20c0 15-11 20-24 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <path d="M24 24c6-7 15-2 12 6-2 5-7 6-12 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <path d="M26 18c-1 7 7 10 12 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="icon-eye" viewBox="0 0 64 64">
+    <path d="M5 32s10-14 27-14 27 14 27 14-10 14-27 14S5 32 5 32z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="32" cy="32" r="7" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M32 9v6M32 49v6M15 16l4 5M49 16l-4 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="icon-nvc" viewBox="0 0 64 64">
+    <path d="M18 21c0-9 13-13 18-5 5-8 18-4 18 5 0 12-18 22-18 22S18 33 18 21z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M14 49c9-4 21-4 32 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="icon-coaching" viewBox="0 0 64 64">
+    <path d="M16 47c12-22 25-28 39-31-3 16-12 31-31 39" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M23 41c8 0 18-4 26-17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="icon-eye-movement" viewBox="0 0 64 64">
+    <circle cx="32" cy="32" r="18" fill="none" stroke="currentColor" stroke-width="2"/>
+    <circle cx="32" cy="32" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M9 32h8M47 32h8M32 9v8M32 47v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="icon-enneagram" viewBox="0 0 64 64">
+    <circle cx="32" cy="32" r="24" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M32 8l21 36H11L32 8zM12 22l40 0M20 52l24-40M44 52L20 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-mail" viewBox="0 0 64 64"><path d="M10 18h44v30H10zM12 20l20 17 20-17" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-phone" viewBox="0 0 64 64"><path d="M23 12l7 12-6 5c4 8 9 13 17 17l5-6 12 7c-2 9-8 13-16 10-17-7-28-18-35-35-3-8 1-14 10-16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-instagram" viewBox="0 0 64 64"><rect x="14" y="14" width="36" height="36" rx="10" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="32" r="9" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="43" cy="21" r="2" fill="currentColor"/></symbol>
+</svg>

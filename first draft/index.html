@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!--#include file="header.html" -->
+<header id="navbar">
+	<div class="menu-left">
+		<a href="index.html"><button type="button">Domů</button></a>
+	</div>
+	<div class="menu-right">
+		<a href="contact.html"><button type="button">Kontakt</button></a>
+		<a href="about.html"><button type="button">O mně</button></a>
+		<a href="blog.html"><button type="button">Blog</button></a>
+	</div>
+</header>
+
+  <section class="hero">
+    <h1>DEEP BLUE</h1>
+    <h2>Transformační ponor do nitra</h2>
+	<h3><br>Pojďte se mnou DO HLOUBKY. Ponořit se DO NITRA. Objevit SKRYTÉ VITŘNÍ SVĚTY,<br>o kterých toho tak málo víme, přesto řídí naše kroky a ovlivňují,<br>jak se cítíme, rozhodujeme a chováme.</h3>
+  </section>
+
+  <section class="bubbles">
+    <a class="bubble" href="bubble1.html">
+      <h3>Bubble 1</h3>
+      <p>Short description for bubble 1.</p>
+    </a>
+    <a class="bubble" href="bubble2.html">
+      <h3>Bubble 2</h3>
+      <p>Short description for bubble 2.</p>
+    </a>
+    <a class="bubble" href="bubble3.html">
+      <h3>Bubble 3</h3>
+      <p>Short description for bubble 3.</p>
+    </a>
+    <a class="bubble" href="bubble4.html">
+      <h3>Bubble 4</h3>
+      <p>Short description for bubble 4.</p>
+    </a>
+    <a class="bubble" href="bubble5.html">
+      <h3>Bubble 5</h3>
+      <p>Short description for bubble 5.</p>
+    </a>
+    <a class="bubble" href="bubble6.html">
+      <h3>Bubble 6</h3>
+      <p>Short description for bubble 6.</p>
+    </a>
+  </section>
+
+  <!--#include file="footer.html" -->
+  <footer>
+  <p>&copy; 2025 My Simple Website</p>
+  </footer>
+
+
+  <script>
+    let lastScroll = 0;
+    const navbar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      if (currentScroll <= 0) {
+        navbar.style.top = '0px';
+        return;
+      }
+      if (currentScroll > lastScroll) {
+        navbar.style.top = '-80px';
+      } else {
+        navbar.style.top = '0';
+      }
+      lastScroll = currentScroll;
+    });
+  </script>
+</body>
+</html>
